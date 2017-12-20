@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -18,8 +20,9 @@ public class EnlaceAcuerdo {
 	@GeneratedValue(strategy = GenerationType.AUTO, generator = "INC_ENLACEACUERDO")
 	private Integer idEnlaceAcuerdo;
 	
-	@Column(name = "IDACUERDO")
-	private Integer idAcuerdo;
+	@ManyToOne
+	@JoinColumn(name = "IDACUERDO")
+	private Acuerdo acuerdo;
 	
 	@Column(name = "IDCABINA")
 	private Integer idCabina;
@@ -41,12 +44,12 @@ public class EnlaceAcuerdo {
 		this.idEnlaceAcuerdo = idEnlaceAcuerdo;
 	}
 
-	public Integer getIdAcuerdo() {
-		return idAcuerdo;
+	public Acuerdo getAcuerdo() {
+		return acuerdo;
 	}
 
-	public void setIdAcuerdo(Integer idAcuerdo) {
-		this.idAcuerdo = idAcuerdo;
+	public void setAcuerdo(Acuerdo acuerdo) {
+		this.acuerdo = acuerdo;
 	}
 
 	public Integer getIdCabina() {
@@ -80,6 +83,6 @@ public class EnlaceAcuerdo {
 	public void setToken(String token) {
 		this.token = token;
 	}
-	
 
+	
 }
