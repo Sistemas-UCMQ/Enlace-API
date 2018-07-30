@@ -208,3 +208,102 @@
 2017-12-20 09:56:01.076  INFO 6456 --- [http-nio-60682-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
 2017-12-20 09:56:01.300  WARN 6456 --- [http-nio-60682-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: null
 2017-12-20 09:56:01.300  WARN 6456 --- [http-nio-60682-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : WARNING: No connection characterset specified (property lc_ctype, encoding, charSet or localEncoding), defaulting to characterset NONE
+2017-12-20 13:33:23.591  INFO 6456 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-12-20 13:33:23.595  INFO 6456 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3967e60c: startup date [Wed Dec 20 09:55:51 ART 2017]; root of context hierarchy
+2017-12-20 13:33:23.622  INFO 6456 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-12-20 13:33:23.624  INFO 6456 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-02-14 09:51:22.474  INFO 11728 --- [main] c.u.enlace.api.EnlaceApplication         : Starting EnlaceApplication on Sistemas02 with PID 11728 (C:\Git\Enlace-API\Enlace-API\bin started by lcastano in C:\Git\Enlace-API\Enlace-API)
+2018-02-14 09:51:22.476  INFO 11728 --- [main] c.u.enlace.api.EnlaceApplication         : No active profile set, falling back to default profiles: default
+2018-02-14 09:51:22.734  INFO 11728 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3967e60c: startup date [Wed Feb 14 09:51:22 ART 2018]; root of context hierarchy
+2018-02-14 09:51:24.303  INFO 11728 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 60682 (http)
+2018-02-14 09:51:24.323  INFO 11728 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-02-14 09:51:24.325  INFO 11728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-02-14 09:51:24.580  INFO 11728 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/enlaceapi]     : Initializing Spring embedded WebApplicationContext
+2018-02-14 09:51:24.581  INFO 11728 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1849 ms
+2018-02-14 09:51:24.781  INFO 11728 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-14 09:51:24.786  INFO 11728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-14 09:51:24.786  INFO 11728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-14 09:51:24.789  INFO 11728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-14 09:51:24.790  INFO 11728 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-14 09:51:26.158  INFO 11728 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-14 09:51:26.175  INFO 11728 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-14 09:51:26.259  INFO 11728 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-02-14 09:51:26.261  INFO 11728 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-02-14 09:51:26.263  INFO 11728 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-02-14 09:51:26.415  INFO 11728 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-14 09:51:26.559  INFO 11728 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.FirebirdDialect
+2018-02-14 09:51:26.836  WARN 11728 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-02-14 09:51:26.838  WARN 11728 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-02-14 09:51:27.159  INFO 11728 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-14 09:51:27.834  INFO 11728 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3967e60c: startup date [Wed Feb 14 09:51:22 ART 2018]; root of context hierarchy
+2018-02-14 09:51:27.925  INFO 11728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/enlaceAcuerdo],methods=[GET]}" onto public com.unidadcoronaria.enlace.api.domain.EnlaceAcuerdo com.unidadcoronaria.enlace.api.controller.EnlaceAcuerdoController.getEnlaceAcuerdo(java.lang.String)
+2018-02-14 09:51:27.929  INFO 11728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-14 09:51:27.929  INFO 11728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-14 09:51:27.961  INFO 11728 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-14 09:51:27.962  INFO 11728 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-14 09:51:28.003  INFO 11728 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-14 09:51:28.052  WARN 11728 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-02-14 09:51:28.862  INFO 11728 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-14 09:51:28.934  INFO 11728 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 60682 (http)
+2018-02-14 09:51:28.938  INFO 11728 --- [main] c.u.enlace.api.EnlaceApplication         : Started EnlaceApplication in 6.756 seconds (JVM running for 7.35)
+2018-02-14 09:51:48.126  INFO 11728 --- [http-nio-60682-exec-2] o.a.c.c.C.[.[localhost].[/enlaceapi]     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-14 09:51:48.126  INFO 11728 --- [http-nio-60682-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-14 09:51:48.146  INFO 11728 --- [http-nio-60682-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-02-14 09:51:48.195  INFO 11728 --- [http-nio-60682-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-02-14 09:51:48.914  WARN 11728 --- [http-nio-60682-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: null
+2018-02-14 09:51:48.914  WARN 11728 --- [http-nio-60682-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : WARNING: No connection characterset specified (property lc_ctype, encoding, charSet or localEncoding), defaulting to characterset NONE
+2018-02-15 12:36:30.809  INFO 11728 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-02-15 12:36:30.814  INFO 11728 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3967e60c: startup date [Wed Feb 14 09:51:22 ART 2018]; root of context hierarchy
+2018-02-15 12:36:30.843  INFO 11728 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-02-15 12:36:30.844  INFO 11728 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-02-21 11:10:41.812  INFO 20600 --- [main] c.u.enlace.api.EnlaceApplication         : Starting EnlaceApplication on Sistemas02 with PID 20600 (C:\Git\Enlace-API\Enlace-API\bin started by lcastano in C:\Git\Enlace-API\Enlace-API)
+2018-02-21 11:10:41.815  INFO 20600 --- [main] c.u.enlace.api.EnlaceApplication         : No active profile set, falling back to default profiles: default
+2018-02-21 11:10:42.054  INFO 20600 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3967e60c: startup date [Wed Feb 21 11:10:42 ART 2018]; root of context hierarchy
+2018-02-21 11:10:43.603  INFO 20600 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 60682 (http)
+2018-02-21 11:10:43.614  INFO 20600 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-02-21 11:10:43.615  INFO 20600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-02-21 11:10:43.772  INFO 20600 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/enlaceapi]     : Initializing Spring embedded WebApplicationContext
+2018-02-21 11:10:43.773  INFO 20600 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1723 ms
+2018-02-21 11:10:43.906  INFO 20600 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-21 11:10:43.911  INFO 20600 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-21 11:10:43.911  INFO 20600 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-21 11:10:43.911  INFO 20600 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-21 11:10:43.912  INFO 20600 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-21 11:10:44.382  INFO 20600 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-21 11:10:44.400  INFO 20600 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-21 11:10:44.512  INFO 20600 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-02-21 11:10:44.514  INFO 20600 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-02-21 11:10:44.515  INFO 20600 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-02-21 11:10:44.634  INFO 20600 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-21 11:10:44.782  INFO 20600 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.FirebirdDialect
+2018-02-21 11:10:45.081  WARN 20600 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-02-21 11:10:45.083  WARN 20600 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-02-21 11:10:45.084  WARN 20600 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-02-21 11:10:45.084  WARN 20600 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-02-21 11:10:45.084  WARN 20600 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-02-21 11:10:45.442  INFO 20600 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-21 11:10:46.132  INFO 20600 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3967e60c: startup date [Wed Feb 21 11:10:42 ART 2018]; root of context hierarchy
+2018-02-21 11:10:46.210  INFO 20600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/enlaceAcuerdo],methods=[GET]}" onto public com.unidadcoronaria.enlace.api.domain.EnlaceAcuerdo com.unidadcoronaria.enlace.api.controller.EnlaceAcuerdoController.getEnlaceAcuerdo(java.lang.String)
+2018-02-21 11:10:46.214  INFO 20600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-21 11:10:46.215  INFO 20600 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-21 11:10:46.248  INFO 20600 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-21 11:10:46.248  INFO 20600 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-21 11:10:46.298  INFO 20600 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-21 11:10:46.333  WARN 20600 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-02-21 11:10:46.831  INFO 20600 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-02-21 11:10:46.901  INFO 20600 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 60682 (http)
+2018-02-21 11:10:46.905  INFO 20600 --- [main] c.u.enlace.api.EnlaceApplication         : Started EnlaceApplication in 5.378 seconds (JVM running for 6.048)
+2018-02-21 11:10:52.646  INFO 20600 --- [http-nio-60682-exec-2] o.a.c.c.C.[.[localhost].[/enlaceapi]     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-21 11:10:52.647  INFO 20600 --- [http-nio-60682-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-21 11:10:52.669  INFO 20600 --- [http-nio-60682-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-02-21 11:10:52.725  INFO 20600 --- [http-nio-60682-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-02-21 11:10:53.148  WARN 20600 --- [http-nio-60682-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: null
+2018-02-21 11:10:53.148  WARN 20600 --- [http-nio-60682-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : WARNING: No connection characterset specified (property lc_ctype, encoding, charSet or localEncoding), defaulting to characterset NONE
+2018-02-24 18:44:58.395  INFO 20600 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-02-24 18:44:58.400  INFO 20600 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3967e60c: startup date [Wed Feb 21 11:10:42 ART 2018]; root of context hierarchy
+2018-02-24 18:44:58.421  INFO 20600 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-02-24 18:44:58.422  INFO 20600 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
