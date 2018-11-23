@@ -24,8 +24,9 @@ public class EnlaceAcuerdo {
 	@JoinColumn(name = "IDACUERDO")
 	private Acuerdo acuerdo;
 	
-	@Column(name = "IDCABINA")
-	private Integer idCabina;
+	@ManyToOne
+	@JoinColumn(name = "IDCABINA")
+	private Cabina cabina;
 	
 	@Column(name = "IDACUERDOSECCION")
 	private Integer idAcuerdoSeccion;
@@ -52,12 +53,12 @@ public class EnlaceAcuerdo {
 		this.acuerdo = acuerdo;
 	}
 
-	public Integer getIdCabina() {
-		return idCabina;
+	public Cabina getCabina() {
+		return cabina;
 	}
 
-	public void setIdCabina(Integer idCabina) {
-		this.idCabina = idCabina;
+	public void setCabina(Cabina cabina) {
+		this.cabina = cabina;
 	}
 
 	public Integer getIdAcuerdoSeccion() {

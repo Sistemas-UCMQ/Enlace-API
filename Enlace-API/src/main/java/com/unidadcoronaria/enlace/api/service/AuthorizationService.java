@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.unidadcoronaria.enlace.api.repository.EnlaceAcuerdoRepository;
+import com.unidadcoronaria.enlace.api.domain.EnlaceAcuerdo;
 import com.unidadcoronaria.enlace.api.exception.UnauthorizedAccessException;
 
 @Service
@@ -16,18 +17,18 @@ public class AuthorizationService {
 	private EnlaceAcuerdoRepository enlaceAcuerdoRepository;
 	
 	
-	public void validateToken(String token) {
-		if (!validateTokenOnServer(token)) {
+	public EnlaceAcuerdo validateToken(String token) {
+		EnlaceAcuerdo enlaceAcuerdo = validateTokenOnServer(token);
+		
+		if (enlaceAcuerdo != null) {
+			return enlaceAcuerdo;
+		} else {
 			throw new UnauthorizedAccessException("Authorization Required - Token sent by client is incorrect");
 		}
 	}
 	
-	private Boolean validateTokenOnServer(String token){
-		Boolean isValid = false;
-		if(enlaceAcuerdoRepository.findByToken(token) != null){
-			isValid = true;
-		} 
-		return isValid;
+	private EnlaceAcuerdo validateTokenOnServer(String token){
+		return enlaceAcuerdoRepository.findByToken(token);
 	}
 
 }
